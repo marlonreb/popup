@@ -1,0 +1,51 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+section#popup_section {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section#popup_section  img {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup_shadow {
+    background: #00000096;
+    width: 100%;
+    height: 100%;
+}
+.popup {
+    position: absolute;
+    top: 1vh;
+}
+svg#close_popup {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+    background: #fff;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+section.ativo_popup#popup_section {
+    display: flex;
+}
+.popup_shadow.ativo_popup {
+    display: block;
+}
+section#popup_section {
+    display: none;
+    
+}
+.popup_shadow {
+    display: none;
+    transition: 3s;
+}
